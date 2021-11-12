@@ -18,9 +18,11 @@ packages:
   animated_interpolation:
     dependency: "direct main"
     description:
-      name: animated_interpolation
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: main
+      resolved-ref: "0b412a0af3b0fdbeb9cfbc528ec7457d3db3aa42"
+      url: "https://github.com/satish-zibma/animated_interpolation.git"
+    source: git
     version: "0.3.2"
   args:
     dependency: transitive

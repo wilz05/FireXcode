@@ -10,7 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  animated_interpolation: ^0.3.2
+  animated_interpolation:
+    git:
+      url: https://github.com/satish-zibma/animated_interpolation.git
+      ref: main
+
   json_ast: ^1.0.5
   dart_style: ^2.0.0
   process_run: ^0.12.1
