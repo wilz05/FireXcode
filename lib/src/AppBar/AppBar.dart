@@ -41,7 +41,7 @@ class AppbarGadient extends StatefulWidget implements PreferredSizeWidget {
         assert(excludeHeaderSemantics != null),
         assert(backwardsCompatibility != null),
         preferredSize = Size.fromHeight(
-            kToolbarHeight),
+            kToolbarHeight + 15),
         super(key: key);
 
   @override

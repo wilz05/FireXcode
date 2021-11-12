@@ -61,6 +61,6 @@ class _HomePageState extends State<HomePage> {
             setState(() {});
           },
           dropdownValue: 'two'),
-    ]).xScaffold(appBar: 'example Dropdown'.text().xAppBar(preferredSize: Size(15, 15)));
+    ]).xScaffold(appBar: 'example Dropdown'.text().xAppBar());
   }
 }

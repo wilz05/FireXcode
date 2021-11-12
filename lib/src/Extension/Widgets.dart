@@ -205,7 +205,7 @@ extension AppBarXs on Widget {
       final double? toolbarOpacity,
       final double? bottomOpacity,
       final DecorationImage? image,
-        required final Size preferredSize,
+         final Size? preferredSize,
       final Color? backgroundColor,
 
       /// {@template flutter.material.appbar.excludeHeaderSemantics}
