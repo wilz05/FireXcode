@@ -88,7 +88,7 @@ class XExpansionTile {
       onExpansionChanged: onExpansionChanged,
       subtitle: subtitle,
       trailing: trailing,
-      initiallyExpanded: initiallyExpanded ?? false,
+      initiallyExpanded: initiallyExpanded,
     );
   }
 }

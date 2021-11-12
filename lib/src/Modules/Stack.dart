@@ -32,32 +32,32 @@ XCustomScrollView xCustomScrollView = XCustomScrollView();
 
 class XCustomScrollView {
   Key ?key;
-  Axis? scrollDirection = Axis.vertical;
-  bool? reverse = false;
+  Axis scrollDirection = Axis.vertical;
+  bool reverse = false;
   ScrollController? controller;
   bool? primary;
   ScrollPhysics? physics;
-  bool? shrinkWrap = false;
+  bool shrinkWrap = false;
   Key? center;
-  double? anchor = 0.0;
+  double anchor = 0.0;
   double? cacheExtent;
   int? semanticChildCount;
-  DragStartBehavior? dragStartBehavior = DragStartBehavior.start;
+  DragStartBehavior dragStartBehavior = DragStartBehavior.start;
 
   Widget list(List<Widget> list) {
     return list.xCustomScrollView(
-      anchor: anchor ?? 0.0,
+      anchor: anchor,
       cacheExtent: cacheExtent,
       center: center,
       controller: controller,
-      dragStartBehavior: dragStartBehavior ?? DragStartBehavior.start,
+      dragStartBehavior: dragStartBehavior,
       key: key,
       physics: physics,
       primary: primary,
-      reverse: reverse ?? false,
-      scrollDirection: scrollDirection ?? Axis.vertical,
+      reverse: reverse,
+      scrollDirection: scrollDirection,
       semanticChildCount: semanticChildCount,
-      shrinkWrap: shrinkWrap ?? false,
+      shrinkWrap: shrinkWrap,
     );
   }
 }
