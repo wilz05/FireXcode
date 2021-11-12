@@ -67,7 +67,7 @@ class XExpansionTile {
   final Widget trailing;
 
   /// Specifies if the list tile is initially expanded (true) or collapsed (false; the default).
-  final bool initiallyExpanded;
+  final bool? initiallyExpanded;
   final Key key;
 
   XExpansionTile(

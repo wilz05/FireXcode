@@ -143,7 +143,7 @@ extension XListViews on List<Widget> {
       final Clip clipBehavior = Clip.none,
       final Key? key}) {
     return Wrap(
-      clipBehavior: clipBehavior ?? clipBehavior,
+      clipBehavior: clipBehavior,
       alignment: alignment ?? WrapAlignment.start,
       crossAxisAlignment: crossAxisAlignment ?? WrapCrossAlignment.start,
       direction: direction ?? Axis.horizontal,
@@ -448,17 +448,17 @@ extension XListViews on List<Widget> {
 
   Widget xCustomScrollView(
       {Key? key,
-      Axis scrollDirection = Axis.vertical,
-      bool reverse = false,
+      Axis? scrollDirection = Axis.vertical,
+      bool? reverse = false,
       ScrollController? controller,
       bool? primary,
       ScrollPhysics? physics,
-      bool shrinkWrap = false,
+      bool? shrinkWrap = false,
       Key? center,
-      double anchor = 0.0,
+      double? anchor = 0.0,
       double? cacheExtent,
       int? semanticChildCount,
-      DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+      DragStartBehavior? dragStartBehavior = DragStartBehavior.start,
       Clip clipBehavior = Clip.hardEdge,
       ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
           ScrollViewKeyboardDismissBehavior.manual,

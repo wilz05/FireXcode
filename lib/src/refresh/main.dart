@@ -239,8 +239,8 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
     final theme = Theme.of(context);
     _valueColor = _positionController!.drive(
       ColorTween(
-              begin: (widget.color! ?? theme.accentColor).withOpacity(0.0),
-              end: (widget.color! ?? theme.accentColor).withOpacity(1.0))
+              begin: (widget.color ?? theme.accentColor).withOpacity(0.0),
+              end: (widget.color ?? theme.accentColor).withOpacity(1.0))
           .chain(CurveTween(
               curve: const Interval(0.0, 1.0 / _kDragSizeFactorLimit))) as Animatable<Color>,
     );
@@ -680,7 +680,7 @@ class _XLiquidPullToRefreshState extends State<XLiquidPullToRefresh>
               clipper: CurveHillClipper(
                 centreHeight: height,
                 curveHeight: height! / 2 * _springAnimation!.value, // 50.0
-                peakHeight: height! *
+                peakHeight: height *
                     3 /
                     10 *
                     ((_peakHeightUpAnimation!.value != 1.0) //30.0

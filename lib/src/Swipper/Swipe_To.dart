@@ -44,7 +44,7 @@ class XSwipeToState extends State<XSwipeTo>
   Animation<double>? _contentAnimation;
   Offset _start = Offset.zero;
 
-  RenderBox? get _positioned => _positionedKey!.currentContext!.findRenderObject!() as RenderBox?;
+  RenderBox? get _positioned => _positionedKey!.currentContext!.findRenderObject() as RenderBox?;
 
   RenderBox? get _container => _containerKey!.currentContext!.findRenderObject() as RenderBox?;
 
