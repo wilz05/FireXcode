@@ -58,8 +58,10 @@ class XContainerGradient extends StatelessWidget {
               borderRadius:
                   borderRadius ?? BorderRadius.circular(rounded ?? 0)),
           child: InkWell(
-              onTap: (){
-                onTap!();
+              onTap: () {
+                if (onTap != null) {
+                  onTap!();
+                }
               },
               child: Padding(
                 padding: padding ?? EdgeInsets.all(10.0),
